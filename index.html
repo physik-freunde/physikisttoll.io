@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtuelles Physiklabor</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 { margin: 0; font-size: 2.5rem; }
+        p.subtitle { margin-top: 10px; font-size: 1.2rem; color: #bdc3c7; }
+        
+        .level-container {
+            display: flex;
+            gap: 2rem;
+            margin-top: 4rem;
+            padding: 0 20px;
+            width: 100%;
+            max-width: 800px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .level-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            width: 300px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 5px solid #3498db;
+        }
+        .level-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        .level-card.sek2 { border-color: #e74c3c; }
+        
+        .level-card h2 { margin-top: 0; font-size: 2rem; }
+        .level-card p { color: #666; line-height: 1.5; }
+
+        /* Neue Formatierung für die Fußzeile (Impressum) */
+        footer {
+            margin-top: auto; /* Drückt den Footer immer ganz nach unten */
+            padding: 20px 0;
+            width: 100%;
+            text-align: center;
+        }
+        footer a {
+            color: #7f8c8d;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+        footer a:hover {
+            color: #3498db;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Virtuelles Physiklabor</h1>
+        <p class="subtitle">Interaktive Simulationen und Experimente</p>
+    </header>
+
+    <div class="level-container">
+        <a href="sek1/index.html" class="level-card">
+            <h2>SEK I</h2>
+            <p>Grundlagen der Mechanik, Optik, Wärmelehre und einfachen Elektrizitätslehre.</p>
+        </a>
+
+        <a href="sek2/index.html" class="level-card sek2">
+            <h2>SEK II</h2>
+            <p>Vertiefende Themen: Elektrodynamik, Thermodynamik, Schwingungen und Quantenphysik.</p>
+        </a>
+    </div>
+
+    <footer>
+        <a href="impressum.html">Impressum</a>
+    </footer>
+
+</body>
+</html>
